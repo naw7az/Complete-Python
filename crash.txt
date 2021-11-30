@@ -1,0 +1,63 @@
+WEIGHT CONVERSION:
+wei = int(input('Weight:'))
+unit = input('(L)b sor(K)g:')
+if unit.upper() == "L":
+    converted = 0.45 * (wei)
+    print(f"you are{converted}Kg")
+elif unit.upper() == 'K':
+     converter = wei/0.45
+     print(f"you are{converter}lbs")
+else:
+    print("Use L or K as unit for the weight")
+
+
+GUESS GAME:
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Guess a number between 0 to 9:"))
+    guess_count += 1
+    if guess == secret_number:
+        print("YOU GUESSED CORRECT!!")
+        break
+else:
+    print("Sorry:) you lose")
+
+CAR GAME:
+command=""
+#1:39:45,didn't understand the correct use of started variable
+started=False
+whileTrue:
+command=input(">").lower()
+if command=="start":
+if started:
+print("The Car is already started:|...")
+else:
+started=True
+print("Car Started...Ready to go.")
+
+elif command=="stop":
+if not started:
+print("The car is already Stopped!!")
+else:
+started=False
+print("CarStopped..:)")
+elif command=="help":
+print("""
+start-to start the car
+stop-to stop the car
+quit-to quit the game
+""")
+elif command=="quit":
+break
+else:
+print("Sorry..I don't understand that!")
+
+FOR LOOP:
+prices=[10,20,40]
+
+total=0
+for price in prices:
+total+=price
+print(f"Total price is{total}")

@@ -1,0 +1,179 @@
+1. Expression : A piece of code that produces a value.
+  Statement : An entire line of code.
+  iq=100
+  user_age= iq/100
+  here, iq/100 is an expression and line 4 is statement.
+
+2. A string is a piece of text.
+
+3. Strings are immutable.That means we cannot reassign part of a string.
+  We have to reassign the whole string all together.
+
+4. Built-in Function/ Built-in Methods
+   function.method
+   a method is owned by a data type/structure and comes after a dot '.'
+   eg: str.lower()
+
+5. We should know when to convert one data type to another.
+   eg: string to an integer.
+
+6. A list(Array) is a type of data structure which gives an ordered sequence of items.
+   A data structure is a way to organise information(data) into a memory bookshelf.
+   lists are mutable.
+
+7. A keyword is something that has a meaning in actual english as well as in python.
+
+8. None: It is a special data type in python(Null in other language).
+   It represents the absence of values.
+
+9. A dictionary is an unordered key-value pair.Here unordered means that all the key-value pairs are not stored next to each other in memory.
+   In case of list the index are stored right next to each other in memory.
+
+10. A tuple is a type of data structures which is immutable. An immutable list.
+
+11. A set is an unordered data structure of unique items.In set every item should be unique otherwise it will return item only once.
+
+12. The spacing after every conditional logic before printing is called INDENTATION.
+    That little space can change the outcome of our program so always use indentation carefully.
+
+13. Truthy and Falsy are data types/ structures which are considered to be true or false by python.
+    eg: empty string, set, dictionary, list, tuple and 0 and None are Falsy.
+
+14. Each alphabet and symbol has its own ASCII value(number).
+    eg: A-Z : 65-90
+        a-z : 97-122 (hence a>A)      in symbol--> @=64
+
+     print(ord("a")) ---To get ASCII value of any symbol.
+
+15. '==' checks for the equality in value of two thing.
+    'is' checks if the location in memory of the two things are same or not.
+
+16. A loop allows us to run a piece of code(iterable) over and over.
+    An iterable is a data type/structure which get repeated again and again in a loop.
+
+17. The enumerate function takes an iterable objects and iterate it with it's index.
+
+18. Use help(function) to know what the function does and can be used for.
+
+19. Scope: What variables do you have access to.
+
+20. Everything in python is an object like all the data types, in which we can use
+    methods.But OOP allows us to do more than that, we can create our own Objects.
+    In OOP, there is class and objects.A class is the blueprint of what we want to
+    create. In a class we instantiate(calling the class to  create) a new instance(a new object).
+
+21. 4 Pillars of OOP:
+
+    i) Encapsulation: It is the binding of data and function that manipulate that data into one blueprint.
+
+    ii) Abstraction: Hiding of (or abstracting away) information and giving access to only what's necessary.
+        Ex: print(len(1, 2, 3, 4)) --> we will get 4 but we don't need to know how the len function works.
+            len is Abstracted away from us.
+
+    iii) Inheritance: Allows new objects to take on the property of existing object.
+
+    iv) Polymorphism: poly means many, morphism means form so many form.
+
+22. Object Introspection: It is the ability to determine the type of object at runtime(when the code is running).
+        Syntax: print(dir("hello")) --> this will show all the methods that "hello" can use.
+
+23. Functional Programming: It operates on a well-defined data structures like list and dictionary,
+    instead of an object. Here data and function are not going to combine in an object like OOP, there is a
+    separation between data and function.
+
+24. The only Pillar of Functional Programming is:
+    Pure Function: A function can be called 'pure' if it follows these 2 rules:
+      a) Given the same input, it will always return the same output.
+      b) It should not produce any side effect. Side effect means when function
+         interact with outside world(what is outside of it).
+
+25. Decorators: Decorators supercharge our functions and are called by "@" following it's name.
+    supercharge means that it add extra features to our functions.
+
+26. Generator: It is a functions which allow you to declare a function that behaves like an iterator,
+    i.e. it can be used in a for loop  Ex: range()
+
+27. "".join() can be used to convert string from a list and vice versa can be done by .split() or list().
+
+28. For writing a very long code in a project, we need to organize our thing and we do it by making
+    multiple .py file which can be interconnected and each .py file is known as module in python.
+
+29. Sometime in list/set/dictionary comprehension you have to use conditional statements(if, else)
+     before applying loop(for loop).
+
+30. You can use modulus(%) in many ways while solving a challenge, so look for it if you can.
+
+31. In the root of a package(shopping) we will always have __init__.py file.
+
+32. You can always import packages from this site: https://pypi.org/  to your project.
+    here millions of developer have put their project and we can use it in our project as packages.
+    pypi stands for Python Package Index.
+    A good practice is to check whether we can make our project directly from python built-in
+    modules(use google to find built in modules as well), if not then only go to pypi.
+    DO NOT COPY THEIR WHOLE PROJECT INTO YOUR OWN, USE IT TO BUILT SOMETHING NEW.
+
+33. Virtual Environments :
+    The 'venv' folder stands for Virtual Environment for a particular project,
+    we can install packages of particular versions in the venv folder that will work
+    for that particular project only.
+    Different versions of a package are needed for different projects hence install packages
+    in venv library and not standard python library.
+
+34. From python 3.7, the dictionary are 'ordered' kv pair, for previous version it was 'unordered'.
+
+35. Raw strings in python:raw strings are raw string literals that treat backslash (\) as a literal character.
+    ex: it(r"") treats /n as /n and not new line.
+
+36. PEP 8 is the standard style guide for python, it tells us how to write our code
+    in a clean format.
+
+37. Web Scraping: It simply means programmatically using Python or any language to grab data from
+    a Website(ctrl+U: for source code of a website) and cleaning it up to use that data for ourselves.
+    write '/robots.txt' after any url to see what type of data the website allow or disallow us(* means any user)
+    to scrap. We can use any data but no one wants their data stolen so ethically we shouldn't touch the disallow data.
+    Remember: Use web scraping if there is no official API from the Website, otherwise go with the API.
+
+38. Googlebot: It uses web scraping to put all the website data in Google data base from which a user
+    can google anything and find what he needed from these websites.
+
+39. Framework Vs. Library(package):
+    The key difference between a library and a framework is "Inversion of Control".
+    With a framework, the control is inverted: the framework CALLS you. A library is
+    just a collection of class definitions which we CALL in our script.
+
+40. MIME Types:
+    A media type (Multipurpose Internet Mail Extensions or MIME type) is a standard
+    that indicates the nature and format of a document, file, or assortment of bytes.
+    Basically, it tells the browser what type of file the server is sending and according
+    to that the browser read that file.
+
+41. A.I. and M.L.:
+    A.I. or artificial intelligence which simply means a human intelligence exhibited by machines.
+    An A.I. is while a machine that acts like a human and currently in our industry we have something
+    called Narrow A.I. that is machines can be just as good or even better than humans at a specific task.
+    For example, detecting heart disease from images or in video games.
+    But narrow A.I. that we have currently simply means those machines can only do one thing really well
+    they can't be like humans and have multiple abilities.
+    That's called General A.I and that's something we are far away from.
+
+    Machine learning is a subset of A.I. and machine learning is an approach to try and achieve artificial
+    intelligence through systems that can find patterns in a set of data. In ML the Machine write the function(Model)
+    we just need to give the input and output.
+
+    Deep Learning is a subset of ML and it's one of the technique for implementing ML.
+
+42. Steps in Machine Learning:
+    #1 - Import the data
+    #2 - Clean the data
+    #3 - Split the data into Training Set(to get the function) and Test Set(to test the function)
+    #4 - Create a Model
+    #5 - Check the Model
+    #6 - Improve the Model
+
+43. Some Important Tools for Machine Learning:
+    1. NumPy (for multi-dimensional list and arrays)
+    2. pandas (for tabular data)
+    3. scikit-learn (to create the model)
+    4. Matplotlib, seaborn, bokeh (2d plotting of data-make graph)
+    5. Kaggle (community for ML)
+    6. Jupyter Notebook (allow us to run certain part of the code)
